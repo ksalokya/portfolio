@@ -1,3 +1,9 @@
+//preloader
+var loader = document.getElementById("preloader");
+window.addEventListener("load",function(){
+  loader.style.display = "none";
+})
+
 //typing text function
 var typed = new Typed(".typing1",{
     strings:["I'm Salokya Kumar."],
