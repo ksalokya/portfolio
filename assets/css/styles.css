@@ -1,4 +1,3 @@
-/*-------------------GENERAL---------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -28,13 +27,44 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
 }
 
+/*-------------------SECTION - heading and sub-heading --------------------------*/
+.section-header {
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 20px;
+
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #4154f1;
+}
+
+.section-header h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+
 /*-------------------NAVBAR---------------------------*/
 .brand-line1 {
     font-size: 2.5rem;
     margin-left: 100px;
     margin-bottom: 0;
-    color: black;
     font-family: 'Dancing Script', cursive;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
 }
 
 .nav-item:hover {
@@ -45,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right
 }
 .nav-item a{
-    color: black !important;
+    color: #fff !important;
 }
 
 .navbar-nav, .navbar-toggler {
@@ -57,14 +87,23 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 350
 }
 
+.navbar {
+  background-color: #4154f1;
+}
+
+.navbar-toggler{
+  border-color:#fff !important;
+}
+
+
 
 @media (max-width :900px) {
     .brand-line1 {
         font-size: 2rem;
-        margin-left: 30%;
+        margin-left: 15%;
     }
     .nav-item:hover {
-        transform: scale(0)
+        transform: none
     }
     .navbar-nav, .navbar-toggler {
         margin-right: 2%
@@ -72,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------------------------HOMEPAGE--------------------------*/
-.hero {
+.homepage {
   height: 85vh;
   width: 100%;
   background-image: url(../images/home-bg.png) !important;
@@ -81,24 +120,24 @@ h1, h2, h3, h4, h5, h6 {
   position: relative
 }
 
-.hero .home-ui-text{
-    margin-top: 9%;
+.homepage .home-ui-text{
+    margin-top: 3%;
 }
 
-.hero h1 {
+.homepage h1 {
     margin: 0;
     font-size: 50px;
     font-weight: 700;
     color: #012970;
 }
 
-.hero h2 {
+.homepage h2 {
     color: #444444;
     margin: 15px 0 0 0;
     font-size: 26px;
 }
 
-.hero .btn-get-started {
+.homepage .btn-get-started {
     margin-top: 30px;
     line-height: 0;
     padding: 15px 40px;
@@ -109,94 +148,105 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
-.hero .btn-get-started span {
+.homepage .btn-get-started span {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
 }
 
-.hero .btn-get-started i {
-    margin-left: 5px;
+.homepage .btn-get-started i {
+    padding-left: 15px;
     font-size: 18px;
     transition: 0.3s;
 }
 
-.hero .btn-get-started:hover i {
+.homepage .btn-get-started:hover i {
     transform: translateX(5px);
 }
 
-.hero .hero-img {
+.homepage .homepage-img {
     text-align: right;
     padding-top: 5%;
 }
 
-.hero .typing{
-    color: aqua;
+.homepage .typing{
+    color: #012970;
 }
 
 @media (min-width: 1024px) {
-    .hero {
+    .homepage {
         background-attachment: fixed;
     }
 }
 
 @media (max-width: 991px) {
-    .hero {
+    .homepage {
         height: auto;
         padding: 120px 0 60px 0;
     }
-    .hero .hero-img {
+    .homepage .homepage-img {
         text-align: center;
         margin-top: 80px;
     }
-    .hero .hero-img img {
+    .homepage .homepage-img img {
         width: 80%;
     }
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .homepage {
         padding: 60px 0 40px 0;
         text-align: center;
     }
-    .hero h1 {
+    .homepage h1 {
         font-size: 35px;
     }
-    .hero h2 {
+    .homepage h2 {
         font-size: 18px;
     }
-    .hero .hero-img img {
+    .homepage .homepage-img img {
         width: 100%;
     }
 }
 
+
 /*--------------------------- SKILLS -------------------------*/
-.about .content {
-  background-color: #f6f9ff;
-  padding: 40px;
+.skill .container{
+  margin-top: 6%;
+  padding-top: 2%;
 }
 
-.about h3 {
-  font-size: 16px;
+.skill .content {
+  background-color: #f6f9ff;
+  padding: 45px;
+}
+
+.skill h3 {
+  font-size: 25px;
   font-weight: 700;
   color: #4154f1;
   text-transform: uppercase;
 }
 
-.about h2 {
-  font-size: 24px;
+.skill .content h2 {
+  font-size: 22px;
   font-weight: 700;
   color: #012970;
 }
 
-.about p {
+.skill p {
   margin: 15px 0 30px 0;
   line-height: 24px;
   font-size: 18px;
 }
 
-.about .btn-read-more {
+.skill .coding-icons-group img{
+  height: 8vh !important;
+  margin: 2% 0.2%;
+}
+
+.skill .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
@@ -206,31 +256,35 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
-.about .btn-read-more span {
+.skill .btn-read-more span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.about .btn-read-more i {
+.skill .btn-read-more i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.about .btn-read-more:hover i {
+.skill .btn-read-more:hover i {
   transform: translateX(5px);
 }
 
-.about .meter {
+.skill .skill-img {
+  height: 100vh;
+}
+
+.skill .meter {
     height: 20px;
     position: relative;
     background: #f3efef;
     border-radius: 25px;
 }
 
-.about .meter>span {
+.skill .meter>span {
     display: block;
     height: 100%;
     border-top-right-radius: 6px;
@@ -242,16 +296,155 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-.about .meter .width1{
+.skill .meter .width1{
   width: 80%;
 }
-.about .meter .width2{
+.skill .meter .width2{
   width: 90%;
 }
-.about .meter .width3{
+.skill .meter .width3{
   width: 75%;
 }
 
+
+/*---------------------------EXPERIENCE-------------------------*/
+.exp .container{
+  margin-top: 6%;
+  padding-top: 2%;
+}
+
+.exp .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.exp .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+
+.exp .box h3 {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.exp .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.exp .box:hover img {
+  transform: scale(1);
+}
+
+/*--------------------------- PROJECTS -------------------------*/
+.projects .container{
+  margin-top: 6%;
+  padding-top: 2%;
+}
+
+.projects .feature-box {
+  padding: 26px 24px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.projects .feature-box .heading {
+  font-size: 18px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0 7%;
+  width: 120px !important;
+}
+
+.projects .feature-box p {
+  margin-left: 7%;
+}
+
+.projects .feature-box i {
+  background: #ecf3ff;
+  padding: 4px;
+}
+
+/*--------------------------- CONTACT -------------------------*/
+.contact .container{
+  margin-top: 6%;
+  padding-top: 2%;
+}
+
+.contact .contact-form {
+  background: #fafbff;
+  padding: 30px;
+  height: 100%;
+}
+
+.section-header h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: orange;
+  text-transform: uppercase;
+}
+
+.contact .contact-form input, .contact .contact-form textarea {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.contact .contact-form input:focus, .contact .contact-form textarea:focus {
+  border-color: #4154f1;
+}
+
+.contact .contact-form input {
+  padding: 10px 15px;
+}
+
+.contact .contact-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .contact-form button:hover {
+  background: orange;
+}
+
+
+/*--------------------------- FOOTER -------------------------*/
+.footer {
+  text-align: center;
+  background-color: #4154f1;
+  font-size: 1rem;
+  color:#fff;
+  padding-bottom: 10px;
+}
+
+.socialicon {
+  margin: 20px 10px;
+  font-size: 1.3rem
+}
+
+.socialicon:hover {
+  transform: scale(1.5)
+}
+
+.footer p{
+  margin-bottom: 0;
+}
+
+.footer a{
+  color: #fff;
+}
+
+.footer a:hover{
+  color: orange;
+}
 
 /*---------------------------Disable aos animation delay on mobile devices-------------------------*/
 @media screen and (max-width: 768px) {
