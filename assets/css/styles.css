@@ -273,8 +273,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(5px);
 }
 
-.skill .skill-img {
-  height: 100vh;
+.skill .skill-img1 {
+  height: 80vh;
+}
+
+.skill .skill-img2 {
+  height: 90vh;
 }
 
 .skill .meter {
