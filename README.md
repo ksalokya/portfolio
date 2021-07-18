@@ -1,1 +1,1 @@
-# My Portfolio - [View](https://salokyaportfolio.netlify.app/)
+# My Portfolio - [View](https://ksalokya.github.io/portfolio/)
