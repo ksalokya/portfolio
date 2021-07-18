@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .homepage .homepage-img {
         text-align: center;
-        margin-top: 80px;
+        margin-top: 20px;
     }
     .homepage .homepage-img img {
         width: 80%;
@@ -199,6 +199,9 @@ h1, h2, h3, h4, h5, h6 {
         padding: 60px 0 40px 0;
         text-align: center;
     }
+    .homepage .home-ui-text{
+        margin-top: 7%;
+    }
     .homepage h1 {
         font-size: 35px;
     }
@@ -206,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 18px;
     }
     .homepage .homepage-img img {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -278,7 +281,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill .skill-img2 {
-  height: 90vh;
+  height: 80vh;
+}
+
+@media (max-width:768px) {
+  .skill .skill-img1 {
+    height: 50vh;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skill .skill-img2 {
+    height: 50vh;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .skill .meter {
@@ -323,6 +340,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   transition: 0.3s;
   height: 100%;
+
+  margin-top: 3%;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: green;
 }
 
 .exp .box img {
@@ -330,7 +352,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   transform: scale(1.1);
 }
-
 
 .exp .box h3 {
   font-size: 24px;
@@ -345,6 +366,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .exp .box:hover img {
   transform: scale(1);
+}
+
+@media (max-width:768px) {
+  .exp .box img{
+    height: 40vh;
+    margin: 0 auto;
+  }
 }
 
 /*--------------------------- PROJECTS -------------------------*/
