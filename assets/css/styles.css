@@ -34,12 +34,20 @@ section {
 
 .section-header {
   text-align: center;
+  padding-top: 40px;
   padding-bottom: 40px;
 
   border-style: solid;
   border-radius: 20px;
   border-width: 2px;
   border-color: #4154f1;
+}
+
+@media (max-width:720px) {
+  .section-header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 .section-header h2 {
@@ -54,7 +62,7 @@ section {
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
+  font-size: 22px;
   line-height: 42px;
   font-weight: 700;
   color: #012970;
@@ -62,7 +70,7 @@ section {
 
 @media (max-width: 768px) {
   .section-header p {
-    font-size: 28px;
+    font-size: 18px;
     line-height: 32px;
   }
 }
@@ -255,15 +263,22 @@ section {
   color: #012970;
 }
 
-.skill p {
+.skill .content p {
   margin: 15px 0 30px 0;
   line-height: 24px;
   font-size: 18px;
 }
 
 .skill .coding-icons-group img{
-  height: 8vh !important;
-  margin: 2% 0.2%;
+  height: 8vh;
+  margin: 3% 0.4%;
+}
+
+@media (max-width:720px) {
+  .skill .coding-icons-group img{
+    height: 5vh;
+    margin: 3% 4.5%;
+  }
 }
 
 .skill .btn-read-more {
@@ -341,7 +356,7 @@ section {
   width: 90%;
 }
 .skill .meter .width3{
-  width: 75%;
+  width: 80%;
 }
 
 
@@ -351,6 +366,10 @@ section {
   padding-top: 2%;
 }
 
+.exp .row{
+  margin-top: 3%;
+}
+
 .exp .box {
   padding: 30px;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
@@ -358,7 +377,6 @@ section {
   transition: 0.3s;
   height: 100%;
 
-  margin-top: 5%;
   border-style: solid;
   border-radius: 10px;
   border-color: green;
@@ -432,6 +450,12 @@ section {
 
 .projects .feature-box p {
   margin-left: 7%;
+}
+
+@media (max-width:720px) {
+  .projects .feature-box p {
+    font-size: 14px;
+  }
 }
 
 .projects .feature-box i {
