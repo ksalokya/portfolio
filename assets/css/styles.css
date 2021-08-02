@@ -77,15 +77,11 @@ section {
 
 
 /*-------------------NAVBAR---------------------------*/
-#title{
-  position:static;
-}
-
 .brand-line1 {
     font-size: 2.5rem;
     margin-left: 100px;
     margin-bottom: 0;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'WindSong', cursive;
     color: white;
     text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
 }
@@ -140,10 +136,6 @@ section {
   background-size: cover;
 }
 
-.homepage .home-ui-text{
-    margin-top: 3%;
-}
-
 .homepage h1 {
     margin: 0;
     font-size: 50px;
@@ -187,7 +179,7 @@ section {
 
 .homepage .homepage-img {
     text-align: right;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .homepage .typing{
@@ -236,7 +228,7 @@ section {
 
 /*--------------------------- SKILLS -------------------------*/
 .skill .container{
-  margin-top: 6%;
+  margin-top: 1%;
   padding-top: 2%;
 }
 
@@ -423,7 +415,13 @@ section {
 }
 
 .projects .row img{
-  margin-top: 5% !important;
+  padding-top: 5%;
+}
+
+@media (min-width:1400px) {
+  .projects .row img{
+    padding-top: 0;
+  }
 }
 
 @media (max-width:768px) {
@@ -433,14 +431,14 @@ section {
   }
 }
 
-.projects .feature-box {
-  padding: 26px 24px;
+.projects .project-box {
+  padding: 15px 12px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
   height: 100%;
 }
 
-.projects .feature-box .heading {
+.projects .project-box .heading {
   font-size: 18px;
   color: #012970;
   font-weight: 700;
@@ -448,24 +446,47 @@ section {
   width: 120px !important;
 }
 
-.projects .feature-box p {
+.projects .project-box p {
   margin-left: 7%;
 }
 
 @media (max-width:720px) {
-  .projects .feature-box p {
+  .projects .project-box p {
     font-size: 14px;
   }
 }
 
-.projects .feature-box i {
+/* Styles for project boxes individually */
+@media (min-width:1400px) {
+  .projects .row .first-project{
+    margin-top: 0;
+  }
+}
+
+@media (max-width:1300px) {
+  .projects .row .first-project{
+    margin-top: 9%;
+  }
+}
+
+@media (max-width:990px) {
+  .projects .row .first-project{
+    margin-top: 0;
+  }
+}
+
+.projects .row .other-project{
+  margin-top: 10px;
+}
+
+.projects .project-box i {
   background: #ecf3ff;
   padding: 4px;
 }
 
 /*--------------------------- CONTACT -------------------------*/
 .contact .container{
-  margin-top: 6%;
+  margin-top: 1%;
   padding-top: 2%;
 }
 
