@@ -177,6 +177,21 @@ section {
     transform: translateX(5px);
 }
 
+@media (max-width:720px) {
+  .homepage .btn-get-started{
+    width: 120px;
+    padding: 10px 20px;
+  }
+  .homepage .btn-get-started span {
+      font-weight: 300;
+      font-size: 10px;
+  }
+  .homepage .btn-get-started i {
+      padding-left: 8px;
+      font-size: 6px;
+  }
+}
+
 .homepage .homepage-img {
     text-align: right;
     padding-top: 2%;
