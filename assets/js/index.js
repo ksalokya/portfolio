@@ -33,11 +33,9 @@ $('.back-to-top').click(function() {
 });
 
 $(window).scroll(function() {
-  var scrollHeight = $(document).height();
-  var scrollPosition = $(window).height() + $(window).scrollTop();
-  if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-      $('.back-to-top').css("background","#4154f1");
+  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      $('.back-to-top').css("background-color","#4154f1");
   }else{
-      $('.back-to-top').css("background","#000");
+    $('.back-to-top').css("background-color","#000");
   }
 });
