@@ -412,7 +412,7 @@ section {
 
 @media (max-width:768px) {
   .exp .box img{
-    height: 40vh;
+    height: 35vh;
     margin: 0 auto;
   }
 }
