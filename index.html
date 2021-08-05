@@ -59,11 +59,13 @@
 
 <body>
 
+  <!-- **************************** PRELOADER **************************** -->
+    <div id="preloader"></div>
+
   <!-- **************************** BACK TO TOP **************************** -->
     <div class="back-to-top">
       <i class="fas fa-arrow-up"></i>
     </div>
-    
 
   <!-- **************************** NAVBAR **************************** -->
   <section id="title">
@@ -103,14 +105,14 @@
     <div class="container">
       <div class="row ">
         <div class="col-lg-6 d-flex flex-column justify-content-center home-ui-text">
-          <h1 data-aos="fade-up" data-aos-once="true">Hey!👋</h1>
-          <h1 data-aos="fade-up" data-aos-delay="200" data-aos-once="true"><span class="typing1"></span></h1>
-          <h2 data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+          <h1 data-aos="fade-up" data-aos-once="true" data-aos-delay="2000">Hey!👋</h1>
+          <h1 data-aos="fade-up" data-aos-delay="2100" data-aos-once="true"><span class="typing1"></span></h1>
+          <h2 data-aos="fade-up" data-aos-delay="2200" data-aos-once="true">
             A passionate Full Stack Web Developer 🚀 & Cyber Security Enthusiast 🔥 having an experience
             of building Websites with JavaScript /
             Reactjs / Nodejs and some other cool libraries and frameworks.
           </h2>
-          <div data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
+          <div data-aos="fade-up" data-aos-delay="2500" data-aos-once="true">
             <div class="text-center text-lg-start">
               <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Contact Me</span>
@@ -119,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 homepage-img" data-aos="zoom-out" data-aos-delay="200" data-aos-once="true">
+        <div class="col-lg-6 homepage-img" data-aos="zoom-out" data-aos-delay="2200" data-aos-once="true">
           <img src="assets/images/hello.gif" class="img-fluid" alt="hello-gesture">
         </div>
       </div>
@@ -465,7 +467,17 @@
   <!-- External js file -->
   <script src="assets/js/index.js"></script>
 
-  <!--    Animate on scroll script-->
+  <!-- Preloader -->
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      setTimeout(function(){
+        loader.style.display = "none";
+      },2000);
+    })
+  </script>
+
+  <!--Animate on scroll script-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!--    INITIALIZE AOS-->

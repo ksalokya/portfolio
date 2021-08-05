@@ -3,6 +3,7 @@ var typed = new Typed(".typing1",{
     strings:["I'm Salokya Kumar."],
     typeSpeed:100,
   	backSpeed:60,
+    startDelay:2000
 });
 
 //Close navbar when nav item is clicked
