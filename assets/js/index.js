@@ -34,11 +34,3 @@ $('.back-to-top').click(function() {
         scrollTop : 0
     }, 50);
 });
-
-$(window).scroll(function() {
-  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-      $('.back-to-top').css("background-color","#4154f1");
-  }else{
-    $('.back-to-top').css("background-color","#000");
-  }
-});
