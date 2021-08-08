@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #000;
+    background: #4154f1;
     text-decoration: none;
     border-radius: 35px;
     display: none;
@@ -97,8 +97,7 @@ section {
 
 @media (max-width:720px) {
   .section-header {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 10px 10px 10px;
   }
 }
 
@@ -201,7 +200,94 @@ section {
     font-size: 26px;
 }
 
-.homepage .btn-get-started {
+.homepage .row .wrapper {
+  margin-top: 2%;
+}
+
+.button {
+  display: inline-block;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button span {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 60px;
+	margin-left: 10px;
+}
+
+.button:hover {
+	width: 200px;
+}
+
+.button:nth-child(1):hover .icon {
+	background: #D44638;
+}
+
+.button:nth-child(2):hover .icon {
+	background: #0e76a8;
+}
+
+.button:nth-child(3):hover .icon {
+	background: #333;
+}
+
+.button:nth-child(4):hover .icon {
+	background: #1da1f2;
+}
+
+.button:nth-child(1) span a{
+	color: #D44638;
+}
+
+.button:nth-child(2) span a{
+	color: #0e76a8;
+}
+
+.button:nth-child(3) span a{
+	color: #333;
+}
+
+.button:nth-child(4) span a{
+	color: #1da1f2;
+}
+
+.button .icon {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border-radius: 50px;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+
+.button .icon i {
+	font-size: 25px;
+	line-height: 60px;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover i {
+	color: #fff;
+}
+
+@media (max-width:720px) {
+  .button:hover {
+  	width: 160px;
+  }
+  .button span a{
+  	font-size: 15px;
+  }
+}
+
+.homepage .homepage-btn {
     margin-top: 30px;
     line-height: 0;
     padding: 15px 40px;
@@ -212,33 +298,33 @@ section {
     box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
-.homepage .btn-get-started span {
+.homepage .homepage-btn span {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
 }
 
-.homepage .btn-get-started i {
+.homepage .homepage-btn i {
     padding-left: 15px;
     font-size: 18px;
     transition: 0.3s;
 }
 
-.homepage .btn-get-started:hover i {
+.homepage .homepage-btn:hover i {
     transform: translateX(5px);
 }
 
 @media (max-width:720px) {
-  .homepage .btn-get-started{
+  .homepage .homepage-btn{
     width: 140px;
     padding: 14px 18px;
   }
-  .homepage .btn-get-started span {
+  .homepage .homepage-btn span {
       font-weight: 300;
       font-size: 12px;
   }
-  .homepage .btn-get-started i {
+  .homepage .homepage-btn i {
       padding-left: 8px;
       font-size: 9px;
   }
@@ -285,7 +371,7 @@ section {
         font-size: 35px;
     }
     .homepage h2 {
-        font-size: 18px;
+        font-size: 17px;
     }
     .homepage .homepage-img img {
         width: 90%;
@@ -340,40 +426,10 @@ section {
   }
 }
 
-.skill .btn-read-more {
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
-}
-
-.skill .btn-read-more span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.skill .btn-read-more i {
-  margin-left: 5px;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.skill .btn-read-more:hover i {
-  transform: translateX(5px);
-}
-
 .skill .skill-img1 {
   height: 80vh;
 }
 
-.skill .skill-img2 {
-  height: 80vh;
-}
 
 @media (max-width:768px) {
   .skill .skill-img1 {
@@ -381,12 +437,10 @@ section {
     width: 90%;
     margin: 0 auto;
   }
+}
 
-  .skill .skill-img2 {
-    height: 50vh;
-    width: 90%;
-    margin: 0 auto;
-  }
+.skill .container .prof-bot-pad{
+  padding-bottom: 0px;
 }
 
 .skill .meter {
@@ -403,7 +457,7 @@ section {
     border-bottom-right-radius: 6px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #aaa5ff;
+
     position: relative;
     overflow: hidden;
 }
@@ -416,6 +470,16 @@ section {
 }
 .skill .meter .width3{
   width: 80%;
+}
+
+.skill .meter .width4{
+  width: 85%;
+}
+.skill .meter .width5{
+  width: 80%;
+}
+.skill .meter .width6{
+  width: 90%;
 }
 
 
